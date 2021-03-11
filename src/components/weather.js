@@ -1,21 +1,22 @@
 import React from 'react';
 
 class Weather extends React.Component {
+    
     render() {
         return (
             <div>
-                { this.props.city && 
+                { this.props.city &&
                     <div>
+                    <form name='info'>
                         <h2>{this.props.city}</h2>
                         <p>Temp: {this.props.temp} °С</p>
                         <p>Humidity: {this.props.humidity}</p>
                         <p>{this.props.sky}</p>
                         
 
-                        <p>Add {this.props.city} to favorite</p>
-                        <label>
-                        <input type="checkbox"/>
-                        </label>
+                        {/* <button type='submit'>add to localstorage</button> */}
+                    </form>
+                        
                        
                     </div>
                 }
