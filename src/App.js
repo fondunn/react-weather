@@ -14,7 +14,7 @@ import './App.css';
 import localStorage from 'local-storage';
 
 
-const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+const API_KEY = 'd3f8adb2a7fa619d3f1c6b1e57e6a50d';
 
 
 class App extends React.Component {
