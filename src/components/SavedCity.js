@@ -12,7 +12,6 @@ class SavedCity extends React.Component {
         const API_URL =  await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`)
 
         const data = await API_URL.json();
-        console.log(data)
         this.setState({
                 city:     data.name,
                 temp:     Math.round(data.main.temp),
