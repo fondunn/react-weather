@@ -1,20 +1,11 @@
 import React from 'react';
-
-class Form extends React.Component {
-
-      render() {
-        return (
-          <form onSubmit={this.props.weatheMethod}>
-            <label>
-              <input type="text" value={this.props.city} onChange={this.handleChange} placeholder="City" name="city"/>
-            </label>
-            
-            <button type="submit">Get Weather</button>
-          </form>
-
-
-        );
-      }
-  }
-
+import './form.css'
+const Form = props => (
+    <div className="custom-form">
+        <form onSubmit={props.weatherMethod}>
+            <input type="text" value={props.city} name="city" placeholder="City"/>
+            <button>Get Weather</button>
+        </form>
+    </div>
+);
 export default Form;
