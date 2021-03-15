@@ -1,0 +1,20 @@
+.custom-form input{
+    height: 50px;
+    font-size: 1.2rem;
+    outline: none;
+}
+.custom-form button {
+    background-color: #D9A918;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    color: #F2F2F2;
+    font-size: 1.2rem;
+    outline: none;
+}
+.error {
+    background-color: #D92B4B;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 1px 0;
+}
